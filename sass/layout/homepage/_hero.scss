@@ -1,0 +1,80 @@
+.hero {
+  font-family: $ff-primary;
+  text-align: center;
+
+  background: linear-gradient(
+    180deg,
+    rgb(0, 102, 255) 0%,
+    rgba(250, 255, 0, 1) 100%
+  );
+}
+
+.hero__overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.hero__title {
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  line-height: 1.36;
+
+  text-transform: uppercase;
+
+  color: $color-secondary;
+
+  @include tablet() {
+    margin-bottom: 40px;
+    font-size: 70px;
+  }
+
+  @include desktop() {
+    margin-bottom: 40px;
+    font-size: 90px;
+  }
+}
+
+.hero__animation {
+  position: relative;
+}
+.hero__img {
+  margin: 0 auto;
+
+  animation-name: spin;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  @include max-tablet() {
+    width: 100px;
+  }
+}
+.hero__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 11px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  // font-weight: 400;
+
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    animation-name: pulse;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @include tablet() {
+    font-size: 20px;
+  }
+}

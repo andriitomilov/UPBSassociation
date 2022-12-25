@@ -1,0 +1,33 @@
+.card-set {
+  @include desktop() {
+    @include centered(flex, null, null);
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+.card-set__item {
+  text-align: center;
+
+  @include desktop() {
+    display: flex;
+    flex-basis: calc((100% - 80px) / 3);
+  }
+}
+
+.card-set__box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  transition: box-shadow $transition;
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow-product;
+  }
+  @include desktop() {
+    display: flex;
+    flex-direction: column;
+  }
+}

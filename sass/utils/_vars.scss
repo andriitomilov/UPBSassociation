@@ -4,8 +4,15 @@ $ff-secondary: 'Montserrat', sans-serif;
 // colors
 
 $color-primary: #000000;
+$color-text: #2c2c2c;
 $color-secondary: #ffffff;
 $color-hover: #033ab1;
 $color-accent: #FFC82B;
 
+$bg-color-primary: rgba(255, 236, 203, 0.195);
+$bg-color-link-read-more: #ededed94;
+
 $transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$box-shadow-product: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);;

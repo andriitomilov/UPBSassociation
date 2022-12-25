@@ -1,0 +1,41 @@
+.work {
+}
+.work__title {
+  font-family: $ff-primary;
+  font-size: 25px;
+  margin-bottom: 20px;
+
+  @include tablet() {
+    font-size: 37px;
+  }
+}
+.work__text {
+  margin-bottom: 20px;
+
+  color: $color-text;
+
+  @include max-tablet() {
+    font-size: 20px;
+  }
+}
+.work__link {
+  display: block;
+  margin: auto 0 0 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-family: $ff-primary;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: inherit;
+
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus{
+    background-color: $bg-color-link-read-more;
+  }
+}
+
