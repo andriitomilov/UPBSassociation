@@ -1,0 +1,31 @@
+.title {
+  font-family: $ff-primary;
+  font-size: 40px;
+
+  @include tablet {
+    font-size: 60px;
+  }
+
+  @include desktop {
+    font-size: 70px;
+  }
+}
+
+.title--secondary {
+  color: $color-secondary;
+}
+
+.text-content {
+  line-height: 1.4;
+  @include max-tablet {
+    font-size: 20px;
+  }
+}
+
+.text-content--primary {
+  color: $color-text;
+}
+
+.text-content--secondary {
+  color: $color-secondary;
+}
