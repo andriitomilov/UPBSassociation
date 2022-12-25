@@ -1,0 +1,47 @@
+.about {
+  background-color: $bg-color-secondary;
+  @include max-desktop() {
+    text-align: center;
+  }
+}
+
+.about__container {
+  @include desktop() {
+    @include centered(flex, space-between, center);
+  }
+}
+.about__wrap {
+  @include max-desktop() {
+    margin-bottom: 40px;
+  }
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__text-content {
+  @include desktop() {
+    width: 515px;
+  }
+}
+.about__img {
+  box-shadow: $box-shadow-product;
+
+  @include max-desktop() {
+    margin: 0 auto;
+  }
+
+  @include desktop() {
+    &:hover,
+    &:focus {
+      animation-name: swing;
+      animation-duration: 1500ms;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  }
+
+  
+}

@@ -1,47 +1,78 @@
-.about {
+.contacts {
   background-color: $bg-color-secondary;
+
   @include max-desktop() {
     text-align: center;
   }
 }
 
-.about__container {
+.contacts__container {
   @include desktop() {
     @include centered(flex, space-between, center);
   }
 }
-.about__wrap {
-  @include max-desktop() {
-    margin-bottom: 40px;
+.contacts__wrap {
+  @include max-tablet() {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $max-desktop) {
+    margin-bottom: 30px;
   }
 }
 
-.about__title {
-  margin-bottom: 20px;
-}
+.contacts__title {
+  margin-bottom: 10px;
 
-.about__text-content {
   @include desktop() {
-    width: 515px;
+    margin-bottom: 20px;
   }
 }
-.about__img {
+.contacts__list {
+  & .contacts__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+.contacts__item {
+}
+.contacts__text {
+  max-width: 150px;
+}
+
+.contacts__link {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  line-height: 1.2;
+
+  color: $color-secondary;
+
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $color-contacts-link-hover
+  }
+
+  @include max-tablet() {
+    font-size: 20px;
+  }
+}
+.contacts__frame {
+  width: 100%;
+  height: 250px;
+
   box-shadow: $box-shadow-product;
 
-  @include max-desktop() {
-    margin: 0 auto;
+  @include mobile() {
+    height: 300px;
+  }
+
+  @include tablet() {
+    height: 450px;
   }
 
   @include desktop() {
-    &:hover,
-    &:focus {
-      animation-name: swing;
-      animation-duration: 1500ms;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-    }
+    width: 600px;
   }
-
-  
 }
