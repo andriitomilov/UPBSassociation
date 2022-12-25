@@ -1,0 +1,47 @@
+.nav {
+}
+.nav__list {
+  @include centered(flex, space-between, center);
+  gap: 10px;
+
+  @include mobile() {
+    gap: 15px;
+  }
+
+  @include tablet() {
+    gap: 50px;
+  }
+}
+.nav__item {
+}
+.nav__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 12px;
+  line-height: 1.5;
+
+  font-weight: 700;
+
+  color: $color-primary;
+
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $color-hover;
+  }
+
+  @include mobile() {
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include tablet() {
+    font-size: 20px;
+  }
+}
+.nav__link.active {
+  color: $color-hover;
+}

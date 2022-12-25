@@ -1,0 +1,36 @@
+.logo {
+  @include centered(flex, space-between, center);
+  gap: 50px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  color: $color-primary;
+
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $color-hover;
+  }
+
+  @include tablet() {
+      padding-top: 15px;
+  padding-bottom: 15px;
+  }
+}
+.logo__img {
+  @include max-mobile() {
+    width: 50px;
+  }
+}
+.logo__text {
+  width: 115px;
+
+  font-size: 14px;
+  line-height: 1.2;
+
+  @include max-tablet() {
+    display: none;
+  }
+}
