@@ -39,7 +39,9 @@
 }
 
 .contacts__link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   padding-top: 6px;
   padding-bottom: 6px;
 
@@ -51,12 +53,16 @@
 
   &:hover,
   &:focus {
-    color: $color-contacts-link-hover
+    color: $color-contacts-link-hover;
   }
 
   @include max-tablet() {
     font-size: 20px;
   }
+}
+
+.contacts__icon{
+  fill: $color-contacts-icon;
 }
 .contacts__frame {
   width: 100%;

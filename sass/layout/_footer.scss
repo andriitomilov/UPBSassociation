@@ -75,6 +75,15 @@
   }
 }
 
+.footer__icons-wrap{
+  display: flex;
+  gap: 3px;
+
+  @include tablet() {
+    margin-left: auto;
+  }
+}
+
 .footer__icons {
   position: relative;
   width: 30px;
@@ -82,10 +91,6 @@
   display: inline-flex;
 
   overflow: hidden;
-
-  @include tablet() {
-    margin-left: auto;
-  }
 
   &:hover .footer__svg--visible,
   &:focus .footer__svg--visible {

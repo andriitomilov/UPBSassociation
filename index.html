@@ -146,14 +146,20 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__link" href="tel:+3099999999"
-                >+38 099 99 999</a
-              >
+                ><svg class="contacts__icon" width="22" height="22">
+                  <use href="./img/icons.svg#icon-phone"></use>
+                </svg>
+                <span>+38 099 99 999</span>
+              </a>
             </li>
 
             <li class="contacts__item">
               <a class="contacts__link" href="tel:+3099999999"
-                >+38 099 99 999</a
-              >
+                ><svg class="contacts__icon" width="22" height="22">
+                  <use href="./img/icons.svg#icon-phone"></use>
+                </svg>
+                <span>+38 099 99 999</span>
+              </a>
             </li>
 
             <li class="contacts__item">
@@ -162,8 +168,12 @@
                 href="https://www.facebook.com/UPBSassociation"
                 target="_blank"
                 rel="nofollow noreferrer noopener"
-                >Facebook</a
               >
+                <svg class="contacts__icon" width="22" height="22">
+                  <use href="./img/icons.svg#icon-facebook-2"></use>
+                </svg>
+                <span>Facebook</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -201,7 +211,8 @@
           </li>
         </ul>
 
-        <a
+        <div class="footer__icons-wrap">
+          <a
           class="footer__icons"
           href="https://www.facebook.com/UPBSassociation"
           target="_blank"
@@ -219,6 +230,25 @@
             <use href="./img/icons.svg#icon-facebook-1"></use>
           </svg>
         </a>
+
+        <a
+          class="footer__icons"
+          href="tel:+3099999999"
+        >
+          <svg class="footer__svg footer__svg--visible" width="32" height="32">
+            <use href="./img/icons.svg#icon-phone"></use>
+          </svg>
+
+          <svg
+            class="footer__svg footer__svg--hovered footer__svg--hidden"
+            width="32"
+            height="32"
+          >
+            <use href="./img/icons.svg#icon-phone"></use>
+          </svg>
+        </a>
+        </div>
+
       </div>
     </footer>
   </body>
