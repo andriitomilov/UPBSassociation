@@ -118,8 +118,12 @@
   transform: translateY(0);
 }
 
-.footer__svg--hovered {
+.footer__svg--primary {
   background-color: $color-hover;
+}
+
+.footer__svg--danger {
+  background-color: $color-accent-icon;
 }
 
 .footer__svg--hidden {

@@ -513,8 +513,12 @@ a {
           transform: translateY(0);
 }
 
-.footer__svg--hovered {
+.footer__svg--primary {
   background-color: #033ab1;
+}
+
+.footer__svg--danger {
+  background-color: #ca9e26;
 }
 
 .footer__svg--hidden {
