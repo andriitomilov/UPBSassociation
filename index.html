@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -51,145 +52,149 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="hero__overlay section">
-        <div class="container">
-          <h1 class="visually-hidden">
-            Асоціація Української Миротворчої Школи
-          </h1>
+    <main>
+      <section class="hero">
+        <div class="hero__overlay section">
+          <div class="container">
+            <h1 class="visually-hidden">
+              Асоціація Української Миротворчої Школи
+            </h1>
 
-          <h2 class="hero__title">приєднуйся до нашої асоціації</h2>
+            <h2 class="hero__title">приєднуйся до нашої асоціації</h2>
 
-          <div class="hero__animation">
-            <img
-              src="./img/animation.png"
-              alt="анімація"
-              class="hero__img"
-              width="190"
-            />
+            <div class="hero__animation">
+              <img
+                src="./img/animation.png"
+                alt="анімація"
+                class="hero__img"
+                width="190"
+              />
 
-            <a href="./" class="hero__link">підтримати</a>
+              <a href="./" class="hero__link">підтримати</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="about section">
-      <div class="container about__container">
-        <div class="about__wrap">
-          <h2 class="title title--secondary about__title">Про нас</h2>
-          <p class="text-content text-content--secondary about__text-content">
-            Громадська організація Асоціація Української Миротворчої Школи
-            займається волонтерською діяльністю. Надає допомогу ВПО та
-            постраждалому від конфлікту населенню в Україні, а також проводить
-            збори для потреб ЗСУ.
-          </p>
+      <section class="about section">
+        <div class="container about__container">
+          <div class="about__wrap">
+            <h2 class="title title--secondary about__title">Про нас</h2>
+            <p class="text-content text-content--secondary about__text-content">
+              Громадська організація Асоціація Української Миротворчої Школи
+              займається волонтерською діяльністю. Надає допомогу ВПО та
+              постраждалому від конфлікту населенню в Україні, а також проводить
+              збори для потреб ЗСУ.
+            </p>
+          </div>
+
+          <img
+            src="./img/homepage/about-img.jpg"
+            alt="люди та коробки із гуманітарною допомогою"
+            class="about__img"
+            width="600"
+            data-aos="zoom-in"
+          />
         </div>
+      </section>
 
-        <img
-          src="./img/homepage/about-img.jpg"
-          alt="люди та коробки із гуманітарною допомогою"
-          class="about__img"
-          width="600"
-        />
-      </div>
-    </section>
+      <section class="work section">
+        <div class="container">
+          <h2 class="visually-hidden">Наші проекти</h2>
 
-    <section class="work section">
-      <div class="container">
-        <h2 class="visually-hidden">Наші проекти</h2>
-
-        <ul class="card-set">
-          <li class="card-set__item">
-            <article class="card-set__box">
-              <h3 class="work__title">Гарячі обіди для ВПО</h3>
-              <p class="work__text">
-                Надання негайної багатоцільової гуманітарної допомога ВПО та
-                постраждалому населенню в Україні
-              </p>
-              <a href="./" class="work__link">
-                <span>читати далі</span>
-              </a>
-            </article>
-          </li>
-
-          <li class="card-set__item">
-            <article class="card-set__box">
-              <h3 class="work__title">Буржуйки на фронт</h3>
-              <p class="work__text">
-                Наші волонтери виготовляють буржуйки на фронт не лише у самому
-                Тернополі, а тепер і на Львівщині.
-              </p>
-              <a href="./" class="work__link"><span>читати далі</span></a>
-            </article>
-          </li>
-
-          <li class="card-set__item">
-            <article class="card-set__box">
-              <h3 class="work__title">Гуманітарна допомога</h3>
-              <p class="work__text">
-                До поліклініки імені Лучанського, що в Херсоні, доставили
-                медичні засоби, необхідні для лікування поранених.
-              </p>
-              <a href="./" class="work__link"><span>читати далі</span></a>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contacts section">
-      <div class="container contacts__container">
-        <div class="contacts__wrap">
-          <h2 class="title title--secondary contacts__title">Наші контакти</h2>
-
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+3099999999"
-                ><svg class="contacts__icon" width="22" height="22">
-                  <use href="./img/icons.svg#icon-phone"></use>
-                </svg>
-                <span>+38 099 99 999</span>
-              </a>
+          <ul class="card-set">
+            <li class="card-set__item">
+              <article class="card-set__box">
+                <h3 class="work__title">Гарячі обіди для ВПО</h3>
+                <p class="work__text">
+                  Надання негайної багатоцільової гуманітарної допомога ВПО та
+                  постраждалому населенню в Україні
+                </p>
+                <a href="./" class="work__link">
+                  <span>читати далі</span>
+                </a>
+              </article>
             </li>
 
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+3099999999"
-                ><svg class="contacts__icon" width="22" height="22">
-                  <use href="./img/icons.svg#icon-phone"></use>
-                </svg>
-                <span>+38 099 99 999</span>
-              </a>
+            <li class="card-set__item">
+              <article class="card-set__box">
+                <h3 class="work__title">Буржуйки на фронт</h3>
+                <p class="work__text">
+                  Наші волонтери виготовляють буржуйки на фронт не лише у самому
+                  Тернополі, а тепер і на Львівщині.
+                </p>
+                <a href="./" class="work__link"><span>читати далі</span></a>
+              </article>
             </li>
 
-            <li class="contacts__item">
-              <a
-                class="contacts__link"
-                href="https://www.facebook.com/UPBSassociation"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <svg class="contacts__icon" width="22" height="22">
-                  <use href="./img/icons.svg#icon-facebook-2"></use>
-                </svg>
-                <span>Facebook</span>
-              </a>
+            <li class="card-set__item">
+              <article class="card-set__box">
+                <h3 class="work__title">Гуманітарна допомога</h3>
+                <p class="work__text">
+                  До поліклініки імені Лучанського, що в Херсоні, доставили
+                  медичні засоби, необхідні для лікування поранених.
+                </p>
+                <a href="./" class="work__link"><span>читати далі</span></a>
+              </article>
             </li>
           </ul>
         </div>
+      </section>
 
-        <iframe
-          class="contacts__frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87643.08026736166!2d32.537741877411534!3d46.64955108091315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c41aa25d9bf967%3A0xf3a5478c8e3121fe!2z0KXQtdGA0YHQvtC9LCDQpdC10YDRgdC-0L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzMwMDA!5e0!3m2!1sru!2sua!4v1671993510798!5m2!1sru!2sua"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
+      <section class="contacts section">
+        <div class="container contacts__container">
+          <div class="contacts__wrap">
+            <h2 id="contacts" class="title title--secondary contacts__title">
+              Наші контакти
+            </h2>
+
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+3099999999"
+                  ><svg class="contacts__icon" width="22" height="22">
+                    <use href="./img/icons.svg#icon-phone"></use>
+                  </svg>
+                  <span>+38 099 99 999</span>
+                </a>
+              </li>
+
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+3099999999"
+                  ><svg class="contacts__icon" width="22" height="22">
+                    <use href="./img/icons.svg#icon-phone"></use>
+                  </svg>
+                  <span>+38 099 99 999</span>
+                </a>
+              </li>
+
+              <li class="contacts__item">
+                <a
+                  class="contacts__link"
+                  href="https://www.facebook.com/UPBSassociation"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
+                >
+                  <svg class="contacts__icon" width="22" height="22">
+                    <use href="./img/icons.svg#icon-facebook-2"></use>
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <iframe
+            data-aos="zoom-in"
+            class="contacts__frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87643.08026736166!2d32.537741877411534!3d46.64955108091315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c41aa25d9bf967%3A0xf3a5478c8e3121fe!2z0KXQtdGA0YHQvtC9LCDQpdC10YDRgdC-0L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzMwMDA!5e0!3m2!1sru!2sua!4v1671993510798!5m2!1sru!2sua"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container footer__container">
@@ -204,7 +209,7 @@
 
         <ul class="footer__list">
           <li class="footer__item">
-            <a href="./" class="footer__link active">Головна</a>
+            <a href="./" class="footer__link" target="_blank">Головна</a>
           </li>
           <li class="footer__item">
             <a href="./news.html" class="footer__link">Новини</a>
@@ -213,43 +218,52 @@
 
         <div class="footer__icons-wrap">
           <a
-          class="footer__icons"
-          href="https://www.facebook.com/UPBSassociation"
-          target="_blank"
-          rel="nofollow noreferrer noopener"
-        >
-          <svg class="footer__svg footer__svg--visible" width="30" height="30">
-            <use href="./img/icons.svg#icon-facebook-2"></use>
-          </svg>
-
-          <svg
-            class="footer__svg footer__svg--primary footer__svg--hidden"
-            width="30"
-            height="30"
+            tabindex="0"
+            class="footer__icons"
+            href="https://www.facebook.com/UPBSassociation"
+            target="_blank"
+            rel="nofollow noreferrer noopener"
           >
-            <use href="./img/icons.svg#icon-facebook-1"></use>
-          </svg>
-        </a>
+            <svg
+              class="footer__svg footer__svg--visible"
+              width="30"
+              height="30"
+            >
+              <use href="./img/icons.svg#icon-facebook-2"></use>
+            </svg>
 
-        <a
-          class="footer__icons"
-          href="tel:+3099999999"
-        >
-          <svg class="footer__svg footer__svg--visible" width="30" height="30">
-            <use href="./img/icons.svg#icon-phone"></use>
-          </svg>
+            <svg
+              class="footer__svg footer__svg--primary footer__svg--hidden"
+              width="30"
+              height="30"
+            >
+              <use href="./img/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
 
-          <svg
-            class="footer__svg footer__svg--danger footer__svg--hidden"
-            width="30"
-            height="30"
-          >
-            <use href="./img/icons.svg#icon-phone"></use>
-          </svg>
-        </a>
+          <a class="footer__icons" href="tel:+3099999999">
+            <svg
+              class="footer__svg footer__svg--visible"
+              width="30"
+              height="30"
+            >
+              <use href="./img/icons.svg#icon-phone"></use>
+            </svg>
+
+            <svg
+              class="footer__svg footer__svg--danger footer__svg--hidden"
+              width="30"
+              height="30"
+            >
+              <use href="./img/icons.svg#icon-phone"></use>
+            </svg>
+          </a>
         </div>
-
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="module" src="./js/aos.js"></script>
   </body>
 </html>

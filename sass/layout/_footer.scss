@@ -45,6 +45,10 @@
     padding-bottom: 10px;
   }
 
+  &:active {
+    color: black;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -86,8 +90,8 @@
 
 .footer__icons {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
   display: inline-flex;
 
   overflow: hidden;
@@ -101,6 +105,16 @@
   &:focus .footer__svg--hidden {
     transform: translateY(0);
   }
+
+  &:active .footer__svg--visible {
+    transform: translateY(0);
+  }
+
+  &:active .footer__svg--visible {
+    transform: translateY(-100%);
+  }
+
+  
 }
 
 .footer__svg {
