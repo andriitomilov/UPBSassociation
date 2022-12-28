@@ -28,7 +28,7 @@
 .footer__item {
   @include max-tablet() {
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
   }
 }
@@ -36,9 +36,13 @@
   position: relative;
   display: block;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
   color: $color-secondary;
+
+  @include mobile() {
+    font-size: 18px;
+  }
 
   @include tablet() {
     padding-top: 10px;
